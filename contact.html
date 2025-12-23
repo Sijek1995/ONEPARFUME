@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - ONE PARFUME</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <h1><i class="fas fa-wind"></i> ONE PARFUME</h1>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="products.html">Produk</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html" class="active">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Cari parfum...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="icon-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Cart Button -->
+                <button id="cartBtn" class="icon-btn" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <!-- Hamburger Menu (Mobile) -->
+                <button id="hamburgerBtn" class="icon-btn hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu Anda dengan segala pertanyaan tentang parfum</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Kirim Pesan</h2>
+                    <p>Isi formulir di bawah ini dan kami akan membalas pesan Anda secepatnya.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>Informasi Kontak</h2>
+                    <p>Anda dapat menghubungi kami melalui berbagai cara di bawah ini:</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telepon / WhatsApp</h3>
+                                <p><a href="https://wa.me/6281212811406">+62 812-1281-1406</a></p>
+                                <small>Layanan 08:00 - 22:00 WIB</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:azwfh1995@gmail.com">azwfh1995@gmail.com</a></p>
+                                <small>Balasan maksimal 24 jam</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Alamat</h3>
+                                <p>Jakarta, Indonesia</p>
+                                <small>Buka di Google Maps</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Jam Operasional</h3>
+                                <p>Senin - Minggu: 08:00 - 22:00 WIB</p>
+                                <small>Termasuk hari libur nasional</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h3>Butuh Bantuan Cepat?</h3>
+                        <p>Gunakan WhatsApp untuk respon yang lebih cepat.</p>
+                        <a href="https://wa.me/6281212811406" class="btn btn-success whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kami</h2>
+            <p class="section-subtitle">Kunjungi lokasi kami di Jakarta</p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.85121527476455!3d-6.258654093789087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1629991325000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Lokasi ONE PARFUME di Jakarta">
+                </iframe>
+            </div>
+            
+            <div class="map-info">
+                <div class="info-card">
+                    <i class="fas fa-directions"></i>
+                    <h3>Petunjuk Arah</h3>
+                    <p>Gunakan Google Maps untuk petunjuk arah yang akurat ke lokasi kami.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-parking"></i>
+                    <h3>Tempat Parkir</h3>
+                    <p>Tersedia area parkir yang luas dan aman untuk kendaraan Anda.</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Konsultasi Gratis</h3>
+                    <p>Datang langsung untuk konsultasi gratis tentang parfum favorit Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Berapa lama proses pengiriman?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pengiriman dalam kota Jakarta memakan waktu 1-2 hari kerja. Untuk luar kota, estimasi 2-5 hari kerja tergantung lokasi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah parfum yang dijual benar-benar original?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, kami hanya menjual parfum original dari supplier resmi. Kami memberikan garansi keaslian untuk semua produk.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana cara melakukan pembayaran?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pembayaran dapat dilakukan via transfer bank (BCA, Mandiri, BNI), e-wallet (OVO, GoPay, Dana), atau COD untuk area Jakarta.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah ada garansi untuk refill parfum?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kami memberikan garansi 7 hari jika terdapat masalah dengan produk. Pastikan segel masih utuh saat menerima produk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-wind"></i> ONE PARFUME</h3>
+                    <p>Solusi refill parfum original dengan kualitas terbaik dan harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/6281212811406">+62 812-1281-1406</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:azwfh1995@gmail.com">azwfh1995@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> ONE PARFUME. Dibuat dengan <i class="fas fa-heart"></i> oleh SUMARWAN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Item keranjang akan dimasukkan melalui JavaScript -->
+            <p class="empty-cart">Keranjang belanja kosong</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Floating WhatsApp (akan dibuat oleh JavaScript) -->
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

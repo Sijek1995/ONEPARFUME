@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - ONE PARFUME</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <h1><i class="fas fa-wind"></i> ONE PARFUME</h1>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="products.html" class="active">Produk</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Cari parfum...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="icon-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Cart Button -->
+                <button id="cartBtn" class="icon-btn" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <!-- Hamburger Menu (Mobile) -->
+                <button id="hamburgerBtn" class="icon-btn hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Koleksi Parfum Kami</h1>
+            <p>Pilih dari berbagai macam parfum original dengan kualitas terbaik</p>
+        </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="products-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="brandFilter">Filter Brand:</label>
+                    <select id="brandFilter">
+                        <option value="all">Semua Brand</option>
+                        <option value="Chanel">Chanel</option>
+                        <option value="Dior">Dior</option>
+                        <option value="Versace">Versace</option>
+                        <option value="Gucci">Gucci</option>
+                        <option value="Prada">Prada</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sortPrice">Urutkan Harga:</label>
+                    <select id="sortPrice">
+                        <option value="default">Default</option>
+                        <option value="low-high">Termurah ke Termahal</option>
+                        <option value="high-low">Termahal ke Termurah</option>
+                    </select>
+                </div>
+                
+                <button id="resetFilter" class="btn btn-secondary">Reset Filter</button>
+            </div>
+            
+            <div class="filter-info">
+                <p id="filterResult">Menampilkan semua produk</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsContainer">
+                <!-- Produk akan diisi oleh JavaScript -->
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results">
+                <i class="fas fa-search"></i>
+                <h3>Produk tidak ditemukan</h3>
+                <p>Coba gunakan kata kunci pencarian yang berbeda atau reset filter</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide -->
+    <section class="size-guide">
+        <div class="container">
+            <h2 class="section-title">Panduan Ukuran Refill</h2>
+            
+            <div class="sizes">
+                <div class="size-option">
+                    <div class="size-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>5ml</h3>
+                    <p>Cocok untuk percobaan atau penggunaan sehari-hari</p>
+                    <span class="price-tag">Mulai dari Rp 50.000</span>
+                </div>
+                
+                <div class="size-option">
+                    <div class="size-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>10ml</h3>
+                    <p>Ukuran populer untuk penggunaan pribadi</p>
+                    <span class="price-tag">Mulai dari Rp 85.000</span>
+                </div>
+                
+                <div class="size-option">
+                    <div class="size-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>30ml</h3>
+                    <p>Ukuran ekonomis untuk penggunaan jangka panjang</p>
+                    <span class="price-tag">Mulai dari Rp 200.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-wind"></i> ONE PARFUME</h3>
+                    <p>Solusi refill parfum original dengan kualitas terbaik dan harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="products.html">Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/6281212811406">+62 812-1281-1406</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:azwfh1995@gmail.com">azwfh1995@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> ONE PARFUME. Dibuat dengan <i class="fas fa-heart"></i> oleh SUMARWAN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Item keranjang akan dimasukkan melalui JavaScript -->
+            <p class="empty-cart">Keranjang belanja kosong</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Floating WhatsApp (akan dibuat oleh JavaScript) -->
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
